@@ -1,0 +1,5 @@
+.recomendation-card {
+  display: flex;
+  overflow-x: scroll;
+  width: 180%;
+}

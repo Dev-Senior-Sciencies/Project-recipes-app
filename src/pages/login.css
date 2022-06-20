@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  opacity: 0.9;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container-filho {
+  align-items: center;
+  background-image: url('../images/./fundoP.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  justify-content: center;
+  width: 230px;
+}
+
+.email-input {
+  background-color: #ffb997;
+  border: solid 1px #ffb997;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  outline: none;
+  padding: 5px;
+}
+
+.password-input {
+  background-color: #ffb997;
+  border: solid 1px #ffb997;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  outline: none;
+  padding: 5px;
+}
+
+.login-submit-btn {
+  align-items: center;
+  background-color: #ffe8dc;
+  border: solid 1px #ffe8dc;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #ffb997 inset , 0 0 0 0 #ffb997;
+  color: black;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-top: 50px;
+  transition: all 150ms ease-in-out;
+  width: 100px;
+
+  /* -webkit-transition: all 150ms ease-in-out; */
+
+}
+
+.login-submit-btn:hover {
+  box-shadow: 0 0 10px 0 #ffb997 inset , 0 0 10px 4px #ffb997;
+}
+
+.login-submit-btn:disabled {
+  background-color: #ffe8dc;
+  border: solid 1px #ffb997;
+  border-radius: 10px;
+  color: #ffe8dc;
+}
+
+.scan {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.scan .fingerprint {
+  background: url('../images/fingerPrint_01.png');
+  background-size: 50px;
+  height: 60px;
+  margin-top: 70px;
+  position: relative;
+  width: 50px;
+}
+
+.scan .fingerprint:before {
+  animation: animate 4s ease-in-out infinite;
+  background: url('../images/fingerPrint_02.png');
+  background-size: 50px;
+  color: #ffb997;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes animate {
+
+  0%, 100% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+}
+
+.scan .fingerprint:after {
+  animation: animate_line 4s ease-in-out infinite;
+  background: #ffb997;
+  border-radius: 8px;
+  content: '';
+  filter: drop-shadow(0 0 20px #ffb997) drop-shadow(0 0 60px #ffb997);
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes animate_line {
+
+  0%, 100% {
+    top: 0%;
+  }
+
+  50% {
+    top: 100%;
+  }
+}
+
+.scan h3 {
+  animation: animate_text 0.5s steps(1) infinite;
+  color: #ffb997;
+  filter: drop-shadow(0 0 20px #ffb997) drop-shadow(0 0 60px #ffb997);
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@keyframes animate_text {
+
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

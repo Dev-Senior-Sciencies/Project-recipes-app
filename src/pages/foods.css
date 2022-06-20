@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container-masterFood {
+    display: flex;
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: auto;
+}
+
+.container-main {
+    background-image: url('../images/./funC.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 348px;
+    border-radius: 10px;
+}
+
+.container-header-category {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-header-category-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 50px;
+}
+
+.container-header-category-button-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 0.6em;
+    margin: 2px;
+    width: auto;
+    height: auto;
+}
+
+.container-header-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-header-input-images {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.container-header-input-Search-button {
+    display: flex;
+    justify-content: center;
+}
+
+.container-header-input-Search-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: rgb(10, 243, 184);
+    background-color: black;
+    border-radius: 10px;
+    height: 35px;
+    width: 70px;
+}
+
+.container-header-input-Search-radios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+
+.container-header-input-Search {
+    height: 100%;
+    width: 100%;
+}
+
+.container-header-input-Search-input {
+    height: 100%;
+    width: 100%;
+}
+
+.header-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.foodCategories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container-main-img-one-full {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.container-main-img-one {
+    height: 60px;
+    width: 28%;
+}
+
+.container-main-img-name {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 60px;
+    width: 28%;
+}
